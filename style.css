@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('font.ttf') format('truetype');
+    /* You can also provide additional font formats for better browser compatibility */
+    /* src: url('font.woff') format('woff'), */
+    /* url('font.woff2') format('woff2'), */
+    /* url('font.eot') format('embedded-opentype'), */
+    /* url('font.svg#CustomFont') format('svg'); */
+}
+.info-box {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px; /* Optional: limit the width of the box */
+}
+
+.info-box h2 {
+    color: #333;
+}
+
+.info-box p {
+    color: #666;
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-box ul li {
+    margin-bottom: 10px;
+}
+
+.info-box ul li strong {
+    color: #333;
+}
+
+
+body, footer {
+    font-family: 'CustomFont', Arial, sans-serif;
+    /* Specify fallback fonts in case the custom font fails to load */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFD700;
+}
+
+/* Apply the custom font to specific elements */
+li,
+p,
+h1,
+h2,
+.menu-item h3,
+.menu-item p,
+.menu-item .price {
+    font-family: 'CustomFont', sans-serif;
+    /* Specify fallback fonts in case the custom font fails to load */
+    /* font-family: 'CustomFont', Arial, sans-serif; */
+}
+ .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* CSS for individual menu items */
+.menu-item {
+    width: 250px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* CSS for image */
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* CSS for title */
+.menu-item h3 {
+    text-align: center;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* CSS for description */
+.menu-item p {
+    padding: 0 20px;
+    color: #666;
+}
+
+/* CSS for price */
+.menu-item .price {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    transition: left 0.3s ease;
+}
+
+.sidebar nav {
+    padding-top: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+}
+
+.sidebar nav ul li a:hover {
+    color: #FFD700;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    z-index: 999;
+}
